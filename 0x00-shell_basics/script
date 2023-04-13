@@ -2,4 +2,9 @@
 echo "input file name"
 read filename
 echo "#!/bin/bash" > ${filename}
+
+
+echo "input ur answer"
+read uranswer
+echo "${uranswer}" >> ${filename}
 chmod u+x ${filename}
