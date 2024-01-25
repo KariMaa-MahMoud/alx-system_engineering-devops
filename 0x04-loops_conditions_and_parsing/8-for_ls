@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # This script is to display displays: The content of the current directory
-
-for file in *; do
-    if [ -f "$file" ] && [ "${file:0:1}" != "." ]; then
-        name=$(echo "$file" | awk -F'-' '{print $2}')
-        echo "$name"
-    fi
+for file_name in *
+do
+	echo "$file_name" | cut -d "-" -f2-
 done
