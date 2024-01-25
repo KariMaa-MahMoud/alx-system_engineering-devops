@@ -22,4 +22,4 @@ do
         done
     fi
     ((hour++))
-done | head -n 70
+done
